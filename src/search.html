@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Poppins -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <!-- Reenie Beanie -->
+    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet" />
+    <!-- Font Awesome 5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="stylesheet" href="output.css" />
+</head>
+
+<body class="font-poppins">
+    <header>
+        <nav class="bg-[#F2F2F2] fixed w-full z-20 top-0 start-0">
+            <div class="max-w-7xl h-full flex justify-between items-center py-4 mx-auto">
+                <!-- LOGO -->
+                <div>
+                    <img class="w-[150px] h-[36.31px]" src="img/nav/nav-logo.png" alt="Logo" />
+                </div>
+                <div>
+                    <!-- NAV LINKS -->
+                    <ul class="flex gap-[80px]">
+                        <li class="text-center">
+                            <a href="/src/home.html"
+                                class="relative after:inline-block after:overflow-hidden after:w-[2px] after:h-[10px] after:content-[''] after:border-t-4 after:border-b-4 after:mt-1 after:border-dashed after:rounded-sm after:border-[#5D5FEF]">
+                                Home
+                            </a>
+                        </li>
+                        <li class="text-center">
+                            <a href="#"
+                                class="relative after:inline-block after:overflow-hidden after:w-[2px] after:h-[10px] after:content-[''] after:border-t-4 after:border-b-4 after:mt-1 after:border-dashed after:rounded-sm after:border-[#5D5FEF]">
+                                Travel
+                            </a>
+                        </li>
+                        <li class="text-center">
+                            <a href="#"
+                                class="relative after:inline-block after:overflow-hidden after:w-[2px] after:h-[10px] after:content-[''] after:border-t-4 after:border-b-4 after:mt-1 after:border-dashed after:rounded-sm after:border-[#5D5FEF]">
+                                Pages
+                            </a>
+                        </li>
+                        <li class="text-center">
+                            <a href="#"
+                                class="relative after:inline-block after:overflow-hidden after:w-[2px] after:h-[10px] after:content-[''] after:border-t-4 after:border-b-4 after:mt-1 after:border-dashed after:rounded-sm after:border-[#5D5FEF]">
+                                Shop
+                            </a>
+                        </li>
+                        <li class="text-center">
+                            <a href="#"
+                                class="relative after:inline-block after:overflow-hidden after:w-[2px] after:h-[10px] after:content-[''] after:border-t-4 after:border-b-4 after:mt-1 after:border-dashed after:rounded-sm after:border-[#5D5FEF]">
+                                Blog
+                            </a>
+                        </li>
+                        <li class="text-center">
+                            <a href="#"> Contact Us </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- BUTTON -->
+                <div class="flex gap-[32px] items-center">
+                    <i class="fa-solid fa-bars text-[20px]"></i>
+                    <a href="/src/search.html"> <button
+                            class="w-[110.64px] h-[44px] bg-main text-white rounded-md text-[14px] font-[700]">
+                            Search
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- FIRST SECTION -->
+        <section class="bg-[#FFFFFF]">
+            <div class="w-full h-[530px] relative text-white">
+                <div class="w-full h-[530px] absolute inset-0 bg-our-package bg-no-repeat bg-center">
+                    <div class="absolute inset-0 bg-more-dark"></div>
+                    <div class="w-full h-full flex justify-center items-center relative z-10">
+                        <p class="text-[50px] font-[700]">Our Packages</p>
+                    </div>
+                </div>
+                <div class="absolute flex w-full justify-between bottom-0 p-[34px]">
+                    <div class="flex gap-[25px] relative left-[204px]">
+                        <p class="font-[400] text-[14px]">PRICE <i class="fa-solid fa-chevron-down"></i></p>
+                        <p class="font-[400] text-[14px]">NAME <i class="fa-solid fa-chevron-down"></i></p>
+                    </div>
+                    <div class="relative right-[200px]">
+                        <div class="flex gap-[20px] text-[25px] font-[900]">
+                            <i class="fa-brands fa-microsoft"></i>
+                            <i class="fa-solid fa-list text-[#5D5FEF]"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-[140px]">
+            <div class="h-[1600px]">
+                <div class="w-full h-full flex justify-evenly">
+                    <aside>
+                        <div class="border-[#F1F1F1] border-b py-[40px] flex flex-col gap-[20px]">
+                            <p class="text-[20px] font-[700]">Select your destination</p>
+                            <p class="inline-block w-full bg-[#EFEFEF] text-main-gray font-[400]">All Destination</p>
+                        </div>
+
+                        <div class="py-[30px] border-b-[#F9F9F9] border-b">
+                            <p class="text-[20px] font-[700]">Select your date :</p>
+                            <div class="w-full h-[57px] p-[30px] rounded-[5px] border-[#F1F1F1] border"></div>
+                        </div>
+
+                        <div class="py-[30px]">
+                            <p class="text-[20px] font-[700]">Typologies :</p>
+                            <div class="w-[350px] mt-[24px]">
+                                <form action="#" class="grid grid-cols-2 gap-x-8 gap-y-3 font-[400] text-[#6E6E6E]">
+                                    <div class="flex gap-[7px]">
+                                        <input type="checkbox" name="sports-activities">
+                                        <label for="sports-activities">Sport Activities</label>
+                                    </div>
+                                    <div class="flex gap-[7px]">
+                                        <input type="checkbox" name="family-friendly">
+                                        <label for="family-friendly">Family-Friendly</label>
+                                    </div>
+                                    <div class="flex gap-[7px]">
+                                        <input type="checkbox" name="heritage-tours">
+                                        <label for="heritage-tours">Heritage tours</label>
+                                    </div>
+                                    <div class="flex gap-[7px]">
+                                        <input type="checkbox" name="road-trips">
+                                        <label for="road-trips">Road Trips</label>
+                                    </div>
+                                    <div class="flex gap-[7px]">
+                                        <input type="checkbox" name="budget-travel">
+                                        <label for="budget-travel">Budget Travel</label>
+                                    </div>
+                                    <div class="flex gap-[7px]">
+                                        <input type="checkbox" name="culinary-tourism">
+                                        <label for="culinary-tourism">Culinary Tourism</label>
+                                    </div>
+                                    <div class="flex gap-[7px]">
+                                        <input type="checkbox" name="eco-tourism">
+                                        <label for="eco-tourism">Eco-tourism</label>
+                                    </div>
+                                    <div class="flex gap-[7px]">
+                                        <input type="checkbox" name="adventure-travel">
+                                        <label for="adventure-travel">Adventure Travel</label>
+                                    </div>
+                                    <div class="flex gap-[7px]">
+                                        <input type="checkbox" name="beach-holiday">
+                                        <label for="beach-holiday">Beach Holidays</label>
+                                    </div>
+                                    <div class="flex gap-[7px]">
+                                        <input type="checkbox" name="cultural-tours">
+                                        <label for="cultural-tours">Cultural Tours</label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="py-[35px] border-b-[#F9F9F9] border-b flex flex-col gap-[20px]">
+                            <p class="text-[20px] font-[700]">Max Price:</p>
+                            <p class="text-right"><span class="text-main-gray">$</span> 5000</p>
+                            <div class="bg-[#F9F9F9] h-2 w-full rounded-full">
+                                <div class="w-[50%] h-2 bg-black rounded-full flex justify-end items-center">
+                                    <div class="w-[15px] h-[15px] bg-black"></div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-[12px] mt-[25px]">
+                                <input type="checkbox" name="promotions">
+                                <label class="text-main-gray" for="promotions">See only promotions</label>
+                            </div>
+                        </div>
+
+                        <div class="py-[35px] border-b-[#F9F9F9] border-b flex flex-col gap-[20px]">
+                            <p class="text-[20px] font-[700]">Durations :</p>
+                            <form action="#" class="grid grid-cols-2 gap-x-8 gap-y-3 font-[400] text-[#6E6E6E]">
+                                <div>
+                                    <input type="checkbox" name="1-week">
+                                    <label for="1-week">1 Week</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="10-days">
+                                    <label for="10-days">10 Days</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="15-days">
+                                    <label for="15-days">15-days</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="5-days">
+                                    <label for="5-days">5 Days</label>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="py-[35px] border-b-[#F9F9F9] border-b flex flex-col gap-[20px]">
+                            <p class="text-[20px] font-[700]">Difficulty :</p>
+                            <form action="#" class="grid grid-cols-2 gap-x-8 gap-y-3 font-[400] text-[#6E6E6E]">
+                                <div>
+                                    <input type="checkbox" name="challenging">
+                                    <label for="challenging">Challenging</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="difficult">
+                                    <label for="difficult">Difficult</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="easy">
+                                    <label for="easy">Easy</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="medium">
+                                    <label for="medium">Medium</label>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="py-[35px] border-b-[#F9F9F9] border-b flex flex-col gap-[20px]">
+                            <p class="text-[20px] font-[700]">Min Age :</p>
+                            <form action="#" class="grid grid-cols-2 gap-x-8 gap-y-3 font-[400] text-[#6E6E6E]">
+                                <div>
+                                    <input type="checkbox" name="0">
+                                    <label for="0">0</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="16">
+                                    <label for="16">16</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="18">
+                                    <label for="18">18</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="5">
+                                    <label for="5">5</label>
+                                </div>
+                            </form>
+                        </div>
+                    </aside>
+                    <div class="w-[1000px]">
+                        <div class="flex gap-[1px] justify-evenly flex-wrap">
+                            <!-- CHIANG MAI -->
+                            <div class="h-[700px] max-w-[420px]">
+                                <div class="flex flex-col relative">
+                                    <div
+                                        class="h-[280px] bg-chiang-mai bg-contain bg-no-repeat rounded-[15px] relative top-[40px]">
+                                    </div>
+                                    <div
+                                        class="h-[406px] flex flex-col justify-evenly p-[30px] bg-white z-10 shadow-md shadow-[#0000001A] rounded-[15px] rounded-t-none">
+                                        <div
+                                            class="flex justify-between text-[#5D5FEF] rounded-[5px] bg-white shadow-sm shadow-[#0000001A] px-[20px] py-[10px]">
+                                            <p class="text-main-gray text-[14px] font-[400]">
+                                                <i class="fa-solid fa-clock text-[15px] text-[#5D5FEF] mr-[15px]"></i>
+                                                1 Week
+                                            </p>
+                                            <div class="text-[15px]">
+                                                <i class="fa-solid fa-envelope mr-[15px]"></i>
+                                                <i class="fas fa-map-marked"></i>
+                                            </div>
+                                        </div>
+                                        <div class="border-b pb-[20px] pt-[30px]">
+                                            <p class="text-[20px] font-[700]">Chiang Mai</p>
+                                            <p class="text-[16px] text-main-gray mt-[5px]">
+                                                <i
+                                                    class="fa-solid fa-location-dot text-[#14B9D5] text-[15px] font-[900] mr-[15px]"></i>Thailand
+                                            </p>
+                                        </div>
+                                        <div class="border-b py-[20px]">
+                                            <p class="text-main-gray">
+                                                Visit the temples and the Chiang Mai Night Bazaar, a
+                                                huge huge market located on Chiang Klan Road.
+                                            </p>
+                                        </div>
+                                        <div class="flex justify-between py-[33px]">
+                                            <div>
+                                                <a href="/src/chiang-mai.html">
+                                                    <button
+                                                        class="bg-main text-white rounded-lg px-7 py-3 font-[700] text-[14px]">
+                                                        Details
+                                                    </button>
+                                                </a>
+
+                                            </div>
+                                            <div>
+                                                <p class="text-right text-main-gray tracking-[1px]">From</p>
+                                                <p class="text-[25px] font-[700]">$490</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CHAO PRAYA -->
+                            <div class="h-[700px] max-w-[420px]">
+                                <div class="flex flex-col relative">
+                                    <div
+                                        class="h-[280px] bg-chao-praya bg-contain bg-no-repeat rounded-[15px] relative top-[40px]">
+                                        <div
+                                            class="absolute top-[20px] right-[20px] bg-[#14B9D5] font-[400] text-[14px] text-white tracking-[1px] px-[15px] py-[5px] rounded-[15px]">
+                                            SALE
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="h-[406px] flex flex-col justify-evenly p-[30px] bg-white z-10 shadow-md shadow-[#0000001A] rounded-[15px] rounded-t-none">
+                                        <div
+                                            class="flex justify-between text-[#14B9D5] rounded-[5px] bg-white shadow-sm shadow-[#0000001A] px-[20px] py-[10px]">
+                                            <p class="text-main-gray text-[14px] font-[400]">
+                                                <i class="fa-solid fa-clock text-[15px] text-[#14B9D5] mr-[15px]"></i>
+                                                5 Days
+                                            </p>
+                                            <div class="text-[15px]">
+                                                <i class="fa-solid fa-envelope mr-[15px]"></i>
+                                                <i class="fas fa-map-marked"></i>
+                                            </div>
+                                        </div>
+                                        <div class="border-b pb-[20px] pt-[30px]">
+                                            <p class="text-[20px] font-[700]">Chao Phraya</p>
+                                            <p class="text-[16px] text-main-gray mt-[5px]">
+                                                <i
+                                                    class="fa-solid fa-location-dot text-[#14B9D5] text-[15px] font-[900] mr-[15px]"></i>Thailand
+                                            </p>
+                                        </div>
+                                        <div class="border-b py-[20px]">
+                                            <p class="text-main-gray">
+                                                Boat tour in the capital of Thailand, Bangkok, to see
+                                                the beautiful palaces and monuments from the water.
+                                            </p>
+                                        </div>
+                                        <div class="flex justify-between py-[33px]">
+                                            <div>
+                                                <button
+                                                    class="bg-[#14B9D5] text-white rounded-lg px-7 py-3 font-[700] text-[14px]">
+                                                    Details
+                                                </button>
+                                            </div>
+                                            <div>
+                                                <p class="text-right text-main-gray tracking-[1px]">From</p>
+                                                <p class="text-[25px] font-[700]">
+                                                    $98<span class="text-[16px] text-gray-400 line-through">$134</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- BANGKOK  -->
+                            <div class="h-[700px] max-w-[420px]">
+                                <div class="flex flex-col relative">
+                                    <div
+                                        class="h-[280px] bg-bangkok bg-contain bg-no-repeat rounded-[15px] relative top-[40px]">
+                                        <div
+                                            class="absolute top-[20px] right-[20px] bg-[#BA71DA] font-[400] text-[14px] text-white tracking-[1px] px-[15px] py-[5px] rounded-[15px]">
+                                            SALE
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="h-[406px] flex flex-col justify-evenly p-[30px] bg-white z-10 shadow-md shadow-[#0000001A] rounded-[15px] rounded-t-none">
+                                        <div
+                                            class="flex justify-between text-[#BA71DA] rounded-[5px] bg-white shadow-sm shadow-[#0000001A] px-[20px] py-[10px]">
+                                            <p class="text-main-gray text-[14px] font-[400]">
+                                                <i class="fa-solid fa-clock text-[15px] text-[#BA71DA] mr-[15px]"></i>
+                                                10 Days
+                                            </p>
+                                            <div class="text-[15px]">
+                                                <i class="fa-solid fa-envelope mr-[15px]"></i>
+                                                <i class="fas fa-map-marked"></i>
+                                            </div>
+                                        </div>
+                                        <div class="border-b pb-[20px] pt-[30px]">
+                                            <p class="text-[20px] font-[700]">Bangkok</p>
+                                            <p class="text-[16px] text-main-gray mt-[5px]">
+                                                <i
+                                                    class="fa-solid fa-location-dot text-[#BA71DA] text-[15px] font-[900] mr-[15px]"></i>Thailand
+                                            </p>
+                                        </div>
+                                        <div class="border-b py-[20px]">
+                                            <p class="text-main-gray">
+                                                Marvelous culinary and cultural trip to the
+                                                Thai capital with its wonderful monuments
+                                                and Buddha statues.
+                                            </p>
+                                        </div>
+                                        <div class="flex justify-between py-[33px]">
+                                            <div>
+                                                <button
+                                                    class="bg-[#BA71DA] text-white rounded-lg px-7 py-3 font-[700] text-[14px]">
+                                                    Details
+                                                </button>
+                                            </div>
+                                            <div>
+                                                <p class="text-right text-main-gray tracking-[1px]">From</p>
+                                                <p class="text-[25px] font-[700]">
+                                                    $1000<span
+                                                        class="text-[16px] text-gray-400 line-through">$1023</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- NARA -->
+                            <div class="h-[700px] max-w-[420px]">
+                                <div class="flex flex-col relative">
+                                    <div
+                                        class="h-[280px] bg-nara bg-contain bg-no-repeat rounded-[15px] relative top-[40px]">
+                                        <div
+                                            class="absolute top-[20px] right-[20px] bg-[#F76570] font-[400] text-[14px] text-white tracking-[1px] px-[15px] py-[5px] rounded-[15px]">
+                                            SALE
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="h-[406px] flex flex-col justify-evenly p-[30px] bg-white z-10 shadow-md shadow-[#0000001A] rounded-[15px] rounded-t-none">
+                                        <div
+                                            class="flex justify-between text-[#F76570] rounded-[5px] bg-white shadow-sm shadow-[#0000001A] px-[20px] py-[10px]">
+                                            <p class="text-main-gray text-[14px] font-[400]">
+                                                <i class="fa-solid fa-clock text-[15px] text-[#F76570] mr-[15px]"></i>
+                                                15 Days
+                                            </p>
+                                            <div class="text-[15px]">
+                                                <i class="fa-solid fa-envelope mr-[15px]"></i>
+                                                <i class="fas fa-map-marked"></i>
+                                            </div>
+                                        </div>
+                                        <div class="border-b pb-[20px] pt-[30px]">
+                                            <p class="text-[20px] font-[700]">Nara</p>
+                                            <p class="text-[16px] text-main-gray mt-[5px]">
+                                                <i
+                                                    class="fa-solid fa-location-dot text-[#F76570] text-[15px] font-[900] mr-[15px]"></i>Japan
+                                            </p>
+                                        </div>
+                                        <div class="border-b py-[20px]">
+                                            <p class="text-main-gray">
+                                                Discover the incredible landmarks such as
+                                                the Todai-ji temple and its famous Great
+                                                Buddha statue.
+                                            </p>
+                                        </div>
+                                        <div class="flex justify-between py-[33px]">
+                                            <div>
+                                                <button
+                                                    class="bg-[#F76570] text-white rounded-lg px-7 py-3 font-[700] text-[14px]">
+                                                    Details
+                                                </button>
+                                            </div>
+                                            <div>
+                                                <p class="text-right text-main-gray tracking-[1px]">From</p>
+                                                <p class="text-[25px] font-[700]">
+                                                    $890<span class="text-[16px] text-gray-400 line-through">$999</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-[50px]">
+                            <ul class="flex justify-center content-center gap-[25px] text-center text-white">
+                                <li
+                                    class="w-[40px] h-[35px] flex items-center justify-center bg-[#5D5FEF] rounded-[5px]">
+                                    1</li>
+                                <li
+                                    class="w-[40px] h-[35px] flex items-center justify-center bg-[#434A54] rounded-[5px]">
+                                    2</li>
+                                <li
+                                    class="w-[40px] h-[35px] flex items-center justify-center bg-[#434A54] rounded-[5px]">
+                                    3</li>
+                                <li
+                                    class="w-[40px] h-[35px] flex items-center justify-center bg-[#434A54] rounded-[5px]">
+                                    4</li>
+                                <li
+                                    class="w-[40px] h-[35px] flex items-center justify-center bg-[#434A54] rounded-[5px]">
+                                    5</li>
+                                <li
+                                    class="w-[40px] h-[35px] flex items-center justify-center bg-[#434A54] rounded-[5px]">
+                                    6</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="w-full h-[480px] relative text-white">
+            <div class="w-full h-full absolute inset-0 bg-footer bg-center bg-no-repeat">
+                <div class="w-full h-full relative bg-more-dark"></div>
+            </div>
+            <div class="relative h-full w-full">
+                <div class="w-full h-full flex justify-center items-center gap-[200px]">
+                    <div class="w-[555px]">
+                        <p class="text-[50px] font-[700]">Travel beyond your
+                            imagination, with our
+                            Travel Agency!</p>
+                    </div>
+
+                    <div class="flex flex-col gap-[21px] relative right-[95px]">
+                        <p class="text-[20px] font-[700]">Address</p>
+                        <p class="font-[400]">1080 Brickell Ave</p>
+                        <p class="font-[400]">Miami - Florida</p>
+                        <p class="font-[400]">U.S. of America</p>
+                    </div>
+
+                    <div class="flex flex-col gap-[20px] relative -left-[100px]">
+                        <p class="text-[20px] font-[700]">Contact</p>
+                        <div>
+                            <button class="bg-main text-white rounded-lg px-7 py-3 font-[700] text-[14px]">
+                                info@travel.com
+                            </button>
+                        </div>
+                        <p class="text-[25px] font-[700]">+ 01 483 593 284</p>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Agency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Poppins -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <!-- Reenie Beanie -->
+  <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet" />
+  <!-- Font Awesome 5 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <link rel="stylesheet" href="output.css" />
+</head>
+
+<body class="font-poppins bg-[#FFFFFF]">
+  <header>
+    <nav class="bg-[#F2F2F2] fixed w-full z-20 top-0 start-0">
+      <div class="max-w-7xl h-full flex justify-between items-center py-4 mx-auto">
+        <!-- LOGO -->
+        <div>
+          <img class="w-[150px] h-[36.31px]" src="img/nav/nav-logo.png" alt="Logo" />
+        </div>
+        <div>
+          <!-- NAV LINKS -->
+          <ul class="flex gap-[80px]">
+            <li class="text-center">
+              <a href="/src/home.html"
+                class="relative after:inline-block after:overflow-hidden after:w-[2px] after:h-[10px] after:content-[''] after:border-t-4 after:border-b-4 after:mt-1 after:border-dashed after:rounded-sm after:border-[#5D5FEF]">
+                Home
+              </a>
+            </li>
+            <li class="text-center">
+              <a href="#"
+                class="relative after:inline-block after:overflow-hidden after:w-[2px] after:h-[10px] after:content-[''] after:border-t-4 after:border-b-4 after:mt-1 after:border-dashed after:rounded-sm after:border-[#5D5FEF]">
+                Travel
+              </a>
+            </li>
+            <li class="text-center">
+              <a href="#"
+                class="relative after:inline-block after:overflow-hidden after:w-[2px] after:h-[10px] after:content-[''] after:border-t-4 after:border-b-4 after:mt-1 after:border-dashed after:rounded-sm after:border-[#5D5FEF]">
+                Pages
+              </a>
+            </li>
+            <li class="text-center">
+              <a href="#"
+                class="relative after:inline-block after:overflow-hidden after:w-[2px] after:h-[10px] after:content-[''] after:border-t-4 after:border-b-4 after:mt-1 after:border-dashed after:rounded-sm after:border-[#5D5FEF]">
+                Shop
+              </a>
+            </li>
+            <li class="text-center">
+              <a href="#"
+                class="relative after:inline-block after:overflow-hidden after:w-[2px] after:h-[10px] after:content-[''] after:border-t-4 after:border-b-4 after:mt-1 after:border-dashed after:rounded-sm after:border-[#5D5FEF]">
+                Blog
+              </a>
+            </li>
+            <li class="text-center">
+              <a href="#"> Contact Us </a>
+            </li>
+          </ul>
+        </div>
+        <!-- BUTTON -->
+        <div class="flex gap-[32px] items-center">
+          <i class="fa-solid fa-bars text-[20px]"></i>
+          <a href="/src/search.html"> <button
+              class="w-[110.64px] h-[44px] bg-main text-white rounded-md text-[14px] font-[700]">
+              Search
+            </button>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="w-full">
+    <!-- FIRST SECTION -->
+    <section>
+      <div class="bg-white h-[1150px]">
+        <div class="bg-[#F2F2F2] h-[950px] relative">
+          <div class="absolute inset-0 bg-hero bg-cover opacity-20"></div>
+
+          <!-- Content Container -->
+          <div class="max-w-7xl h-[1000px] flex flex-col justify-center mx-auto relative z-10">
+            <p class="text-main-gray font-[400] mb-[20px]">LOVE TRAVEL TIME</p>
+            <div class="font-[700] text-[72px]">
+              <p
+                class="relative before:absolute before:bottom-[25px] before:z-[1] before:inline-block before:border-[#FFD205] before:border-4 before:w-[392px] before:h-[8px]">
+                <span class="relative z-10">Adventure</span> &
+              </p>
+              <p>Experience</p>
+              <p>The Travel !</p>
+            </div>
+            <!-- CARD SEARCH -->
+            <div class="w-[1100px] h-[103px] mt-[60px] bg-white rounded-[15px]">
+              <div class="h-full w-full flex items-center">
+                <!-- SEARCH -->
+                <div class="flex items-center gap-[31px] border-[#F1F1F1] px-[38px]">
+                  <i class="fa-solid fa-magnifying-glass text-[31px] text-hero-icon"></i>
+                  <div class="flex flex-col gap-[4px]">
+                    <p class="font-[700]">Search</p>
+                    <p class="text-[#757575] text-[14px]">Insert keyword</p>
+                  </div>
+                </div>
+                <!-- DESTINATION -->
+                <div class="flex items-center gap-[31px] border-l-[2px] border-r-[2px] border-[#F1F1F1] px-[38px]">
+                  <i class="fa-solid fa-location-dot text-[31px] text-hero-icon"></i>
+                  <div class="flex flex-col gap-[4px]">
+                    <p class="font-[700]">Destinations</p>
+                    <p class="text-[#757575] text-[14px]">All Destinations</p>
+                  </div>
+                </div>
+                <!-- TYPOLOGIES -->
+                <div class="flex items-center gap-[31px] border-[#F1F1F1] px-[38px]">
+                  <i class="fa-solid fa-earth-americas text-[31px] text-hero-icon"></i>
+                  <div class="flex flex-col gap-[4px]">
+                    <p class="font-[700]">Typologies</p>
+                    <p class="text-[#757575] text-[14px]">All Typologies</p>
+                  </div>
+                </div>
+                <div class="ml-[50px]">
+                  <button class="w-[267px] h-[62px] bg-main text-white rounded-lg font-[700] text-[14px] uppercase">
+                    Search
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Background hero -->
+
+    </section>
+    <!-- SECOND SECTION -->
+    <section class="relative">
+      <div class="h-[1400px]">
+        <div
+          class="absolute top-[80px] right-0 w-[800px] h-[1000px] bg-hero bg-no-repeat bg-contain bg-top opacity-20 -z-10">
+        </div>
+
+        <div class="max-w-7xl h-[1000px] flex flex-col mx-auto relative z-10">
+          <!-- PLAN TRIP TEXT -->
+          <div class="w-[642px] flex flex-col gap-[21px] relative z-10">
+            <p class="font-reenie-beanie text-[30px] text-[#5D5FEF]">
+              Dream Vacation Destination
+            </p>
+            <div class="font-[700] text-[50px]">
+              <p>Plan the Trip of a Lifetime</p>
+              <p>with Ease</p>
+            </div>
+            <div class="font-[400] text-main-gray">
+              <p>
+                Whether you're looking for a romantic getaway, a
+                family-friendly adventure, or a solo journey to explore the
+                world, a travel agency can provide you with a custom-tailored
+                itinerary that exceeds your expectations.
+              </p>
+            </div>
+            <div>
+              <button class="bg-main text-white rounded-lg px-7 py-3 font-[700] text-[14px]">
+                More Info
+              </button>
+            </div>
+          </div>
+
+          <!-- CATEGORIES CARD -->
+          <div class="mt-[70px]">
+            <div class="flex justify-between">
+              <!-- CITY WALKS TOUR -->
+              <div
+                class="bg-city-walk-tour bg-cover rounded-[15px] w-[400px] h-[120px] flex justify-center items-center">
+                <img class="w-[80px] h-[80px] relative right-[40px]" src="img/more-info-card/pinned-location.png"
+                  alt="Pinned Icon" />
+                <p class="text-white font-[700] text-[20px]">
+                  City Walks Tour
+                </p>
+              </div>
+              <!-- ELECTRIC BIKES -->
+              <div
+                class="bg-electric-bike bg-cover rounded-[15px] w-[400px] h-[120px] flex justify-center items-center">
+                <img class="w-[80px] h-[80px] relative right-[40px]" src="img/more-info-card/mountain.png"
+                  alt="Mountain Icon" />
+                <p class="text-white font-[700] text-[20px]">
+                  Electric Bikes
+                </p>
+              </div>
+              <!-- SKYSCRAPERS VIEW -->
+              <div
+                class="bg-skyscraper-view bg-cover rounded-[15px] w-[400px] h-[120px] flex justify-center items-center">
+                <img class="w-[80px] h-[80px] relative right-[40px]" src="img/more-info-card/gate.png"
+                  alt="Gate Icon" />
+                <p class="text-white font-[700] text-[20px]">
+                  Skyscrapers View
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD -->
+          <div class="mt-[105px]">
+            <div class="flex gap-[30px] justify-between">
+              <!-- CHIANG MAI -->
+              <div class="h-[700px] max-w-[420px]">
+                <div class="flex flex-col relative">
+                  <div class="h-[280px] bg-chiang-mai bg-contain bg-no-repeat rounded-[15px] relative top-[40px]"></div>
+                  <div
+                    class="h-[406px] flex flex-col justify-evenly p-[30px] bg-white z-10 shadow-md shadow-[#0000001A] rounded-[15px] rounded-t-none">
+                    <div
+                      class="flex justify-between text-[#5D5FEF] rounded-[5px] bg-white shadow-sm shadow-[#0000001A] px-[20px] py-[10px]">
+                      <p class="text-main-gray text-[14px] font-[400]">
+                        <i class="fa-solid fa-clock text-[15px] text-[#5D5FEF] mr-[15px]"></i>
+                        1 Week
+                      </p>
+                      <div class="text-[15px]">
+                        <i class="fa-solid fa-envelope mr-[15px]"></i>
+                        <i class="fas fa-map-marked"></i>
+                      </div>
+                    </div>
+                    <div class="border-b pb-[20px] pt-[30px]">
+                      <p class="text-[20px] font-[700]">Chiang Mai</p>
+                      <p class="text-[16px] text-main-gray mt-[5px]">
+                        <i class="fa-solid fa-location-dot text-[#14B9D5] text-[15px] font-[900] mr-[15px]"></i>Thailand
+                      </p>
+                    </div>
+                    <div class="border-b py-[20px]">
+                      <p class="text-main-gray">
+                        Visit the temples and the Chiang Mai Night Bazaar, a
+                        huge huge market located on Chiang Klan Road.
+                      </p>
+                    </div>
+                    <div class="flex justify-between py-[33px]">
+                      <div>
+                        <a href="">
+                          <button class="bg-main text-white rounded-lg px-7 py-3 font-[700] text-[14px]">
+                            Details
+                          </button>
+                        </a>
+
+                      </div>
+                      <div>
+                        <p class="text-right text-main-gray tracking-[1px]">From</p>
+                        <p class="text-[25px] font-[700]">$490</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CHAO PRAYA -->
+              <div class="h-[700px] max-w-[420px]">
+                <div class="flex flex-col relative">
+                  <div class="h-[280px] bg-chao-praya bg-contain bg-no-repeat rounded-[15px] relative top-[40px]">
+                    <div
+                      class="absolute top-[20px] right-[20px] bg-[#14B9D5] font-[400] text-[14px] text-white tracking-[1px] px-[15px] py-[5px] rounded-[15px]">
+                      SALE
+                    </div>
+                  </div>
+
+                  <div
+                    class="h-[406px] flex flex-col justify-evenly p-[30px] bg-white z-10 shadow-md shadow-[#0000001A] rounded-[15px] rounded-t-none">
+                    <div
+                      class="flex justify-between text-[#14B9D5] rounded-[5px] bg-white shadow-sm shadow-[#0000001A] px-[20px] py-[10px]">
+                      <p class="text-main-gray text-[14px] font-[400]">
+                        <i class="fa-solid fa-clock text-[15px] text-[#14B9D5] mr-[15px]"></i>
+                        5 Days
+                      </p>
+                      <div class="text-[15px]">
+                        <i class="fa-solid fa-envelope mr-[15px]"></i>
+                        <i class="fas fa-map-marked"></i>
+                      </div>
+                    </div>
+                    <div class="border-b pb-[20px] pt-[30px]">
+                      <p class="text-[20px] font-[700]">Chao Phraya</p>
+                      <p class="text-[16px] text-main-gray mt-[5px]">
+                        <i class="fa-solid fa-location-dot text-[#14B9D5] text-[15px] font-[900] mr-[15px]"></i>Thailand
+                      </p>
+                    </div>
+                    <div class="border-b py-[20px]">
+                      <p class="text-main-gray">
+                        Boat tour in the capital of Thailand, Bangkok, to see
+                        the beautiful palaces and monuments from the water.
+                      </p>
+                    </div>
+                    <div class="flex justify-between py-[33px]">
+                      <div>
+                        <button class="bg-[#14B9D5] text-white rounded-lg px-7 py-3 font-[700] text-[14px]">
+                          Details
+                        </button>
+                      </div>
+                      <div>
+                        <p class="text-right text-main-gray tracking-[1px]">From</p>
+                        <p class="text-[25px] font-[700]">
+                          $98<span class="text-[16px] text-gray-400 line-through">$134</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- BANGKOK  -->
+              <div class="h-[700px] max-w-[420px]">
+                <div class="flex flex-col relative">
+                  <div class="h-[280px] bg-bangkok bg-contain bg-no-repeat rounded-[15px] relative top-[40px]">
+                    <div
+                      class="absolute top-[20px] right-[20px] bg-[#BA71DA] font-[400] text-[14px] text-white tracking-[1px] px-[15px] py-[5px] rounded-[15px]">
+                      SALE
+                    </div>
+                  </div>
+                  <div
+                    class="h-[406px] flex flex-col justify-evenly p-[30px] bg-white z-10 shadow-md shadow-[#0000001A] rounded-[15px] rounded-t-none">
+                    <div
+                      class="flex justify-between text-[#BA71DA] rounded-[5px] bg-white shadow-sm shadow-[#0000001A] px-[20px] py-[10px]">
+                      <p class="text-main-gray text-[14px] font-[400]">
+                        <i class="fa-solid fa-clock text-[15px] text-[#BA71DA] mr-[15px]"></i>
+                        10 Days
+                      </p>
+                      <div class="text-[15px]">
+                        <i class="fa-solid fa-envelope mr-[15px]"></i>
+                        <i class="fas fa-map-marked"></i>
+                      </div>
+                    </div>
+                    <div class="border-b pb-[20px] pt-[30px]">
+                      <p class="text-[20px] font-[700]">Bangkok</p>
+                      <p class="text-[16px] text-main-gray mt-[5px]">
+                        <i class="fa-solid fa-location-dot text-[#BA71DA] text-[15px] font-[900] mr-[15px]"></i>Thailand
+                      </p>
+                    </div>
+                    <div class="border-b py-[20px]">
+                      <p class="text-main-gray">
+                        Marvelous culinary and cultural trip to the
+                        Thai capital with its wonderful monuments
+                        and Buddha statues.
+                      </p>
+                    </div>
+                    <div class="flex justify-between py-[33px]">
+                      <div>
+                        <button class="bg-[#BA71DA] text-white rounded-lg px-7 py-3 font-[700] text-[14px]">
+                          Details
+                        </button>
+                      </div>
+                      <div>
+                        <p class="text-right text-main-gray tracking-[1px]">From</p>
+                        <p class="text-[25px] font-[700]">
+                          $1000<span class="text-[16px] text-gray-400 line-through">$1023</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- THIRD SECTION -->
+    <section class="mt-[135px]">
+      <div class="w-full h-full bg-[#F2F2F2] flex flex-col justify-center items-center">
+        <div class="max-w-7xl h-[590px] text-center content-center">
+          <div class="gap-[20px]">
+            <!-- CHOOSE TRIP -->
+            <div class="flex flex-col gap-[20px]">
+              <p class="font-reenie-beanie text-[30px] text-[#5D5FEF]">
+                Choose your Trip
+              </p>
+              <p class="text-[35px] font-[700]">Start your Vacation Now</p>
+              <p class="text-main-gray">
+                Looking for your dream vacation destination but don't know
+                where to start? With the help
+                <span class="block">of</span>
+                experienced and knowledgeable travel agents, you can plan the
+                trip of a lifetime with ease.
+              </p>
+            </div>
+            <!-- CARD SEARCH -->
+            <div class="w-[1100px] h-[103px] mt-[60px] bg-white rounded-[15px]">
+              <div class="h-full w-full flex items-center">
+                <!-- SEARCH -->
+                <div class="flex items-center gap-[31px] border-[#F1F1F1] px-[38px]">
+                  <i class="fa-solid fa-magnifying-glass text-[31px] text-fading-orange"></i>
+                  <div class="flex flex-col gap-[4px]">
+                    <p class="font-[700]">Search</p>
+                    <p class="text-[#757575] text-[14px]">Insert keyword</p>
+                  </div>
+                </div>
+                <!-- DESTINATION -->
+                <div class="flex items-center gap-[31px] border-l-[2px] border-r-[2px] border-[#F1F1F1] px-[38px]">
+                  <i class="fa-solid fa-location-dot text-[31px] text-fading-orange"></i>
+                  <div class="flex flex-col gap-[4px]">
+                    <p class="font-[700]">Destinations</p>
+                    <p class="text-[#757575] text-[14px]">All Destinations</p>
+                  </div>
+                </div>
+                <!-- TYPOLOGIES -->
+                <div class="flex items-center gap-[31px] border-[#F1F1F1] px-[38px]">
+                  <i class="fa-solid fa-earth-americas text-[31px] text-fading-orange"></i>
+                  <div class="flex flex-col gap-[4px]">
+                    <p class="font-[700]">Typologies</p>
+                    <p class="text-[#757575] text-[14px]">All Typologies</p>
+                  </div>
+                </div>
+                <div class="ml-[50px]">
+                  <button
+                    class="w-[267px] h-[62px] bg-fading-red text-white rounded-lg font-[700] text-[14px] uppercase">
+                    Search
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOURTH SECTION -->
+    <section class="mt-[120px]">
+      <div class="w-full h-[900px]">
+        <div class="max-w-7xl flex flex-col mx-auto relative z-10">
+          <!-- PLAN TRIP TEXT -->
+          <div class="w-[642px] flex flex-col gap-[21px] relative z-10">
+            <p class="font-reenie-beanie text-[30px] text-[#5D5FEF]">
+              Next Adventure
+            </p>
+            <div class="font-[700] text-[50px]">
+              <p>Travel Destinations</p>
+              <p>Available Worldwide</p>
+            </div>
+            <div class="font-[400] text-main-gray">
+              <p>
+                We have compiled a list of top destinations across the globe,
+                scoured the world for the most alluring and fascinating places
+                to visit. From the beautiful beaches of the Caribbean to the
+                majestic mountains of Europe and the vibrant cities of Asia,
+                our destination list has something for everyone.
+              </p>
+            </div>
+          </div>
+          <!-- CARD -->
+          <div class="mt-[71px]">
+            <div class="flex gap-[30px] justify-between">
+              <!-- Greece -->
+              <div class="h-[400px] w-[300px] relative">
+                <div class="bg-greece bg-cover opacity-75 bg-no-repeat rounded-[15px] absolute inset-0"></div>
+                <div class="absolute inset-0 bg-darken rounded-[15px]"></div>
+                <div class="w-full absolute bottom-[30px] flex justify-center">
+                  <div class="text-center text-white">
+                    <p class="text-[20px] font-[700] mb-[10px]">Greece</p>
+                    <div class="text-[14px] font-[400]">
+                      <p>Experience the ancient history &</p>
+                      <p>beaches</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- EGYPT -->
+              <div class="h-[400px] w-[300px] relative">
+                <div class="bg-egpyt bg-cover opacity-75 bg-no-repeat rounded-[15px] absolute inset-0"></div>
+                <div class="absolute inset-0 bg-darken rounded-[15px]"></div>
+                <div class="w-full absolute bottom-[30px] flex justify-center">
+                  <div class="text-center text-white">
+                    <p class="text-[20px] font-[700] mb-[10px]">Egypt</p>
+                    <div class="text-[14px] font-[400]">
+                      <p>Discover the land of pharaohs &</p>
+                      <p>pyramids</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- AFRICA -->
+              <div class="h-[400px] w-[300px] relative">
+                <div class="bg-africa bg-cover opacity-75 bg-no-repeat rounded-[15px] absolute inset-0"></div>
+                <div class="absolute inset-0 bg-darken rounded-[15px]"></div>
+                <div class="w-full absolute bottom-[30px] flex justify-center">
+                  <div class="text-center text-white">
+                    <p class="text-[20px] font-[700] mb-[10px]">Africa</p>
+                    <div class="text-[14px] font-[400]">
+                      <p>Embark on a journey for your</p>
+                      <p>lifetime</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- FRANCE -->
+              <div class="h-[400px] w-[300px] relative">
+                <div class="bg-france bg-cover opacity-75 bg-no-repeat rounded-[15px] absolute inset-0"></div>
+                <div class="absolute inset-0 bg-darken rounded-[15px]"></div>
+                <div class="w-full absolute bottom-[30px] flex justify-center">
+                  <div class="text-center text-white">
+                    <p class="text-[20px] font-[700] mb-[10px]">France</p>
+                    <div class="text-[14px] font-[400]">
+                      <p>Indulge the art, culture, and</p>
+                      <p>cuisine</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FIFTH SECTION -->
+    <section>
+      <div class="w-full h-[820px] relative">
+        <div class="bg-adventure-hero-bg bg-no-repeat absolute inset-0 -z-[3]"></div>
+        <div class="bg-gradient-to-l bg-contain from-black to-[rgba(67,74,84,0)] absolute inset-0 -z-[2]"></div>
+        <div class="h-full flex justify-center gap-[100px] items-center">
+          <div class="w-[610px] h-[600px] bg-chiang-mai bg-center bg-cover bg-no-repeat">
+            <div class="h-full flex justify-between items-center text-white text-[30px]">
+              <i class="fa-solid fa-angle-left"></i>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </div>
+          <div class="text-white">
+            <p class="font-reenie-beanie font-[500] text-[30px]">Adventure Travel</p>
+            <div class="w-[529px] text-[50px] font-[700]">
+              <p>Embrace the Thrill of the Unknown</p>
+            </div>
+            <div class="w-[607px] font-[400]">
+              <p class="font-[400]">Are you tired of the typical tourist destinations and looking to step out of
+                your comfort zone? Adventure travel may be the perfect solution for you!
+                Here are four reasons why you should book an adventure travel experience :</p>
+            </div>
+            <div class="mt-[45px] flex flex-col gap-[21px]">
+              <div class="pb-[20px] border-b border-b-fading-gray">
+                <p><i class="fa-solid fa-check"></i> Connect with nature</p>
+              </div>
+              <div class="pb-[20px] border-b border-b-fading-gray">
+                <p><i class="fa-solid fa-check"></i> Experience other culture</p>
+              </div>
+              <div class="pb-[20px]">
+                <p><i class="fa-solid fa-check"></i> Create unforgettable memories</p>
+              </div>
+              <div class="pb-[20px]">
+                <button class="bg-main text-white rounded-lg px-7 py-3 font-[700] text-[14px]">
+                  All Services
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SIXTH SECTION -->
+    <section>
+      <div class="w-full h-[1400px]">
+        <div class="w-full h-full bg-white flex flex-col justify-center items-center">
+          <div class="content-center">
+            <p class="text-[100px] font-[700] mb-[70px] text-center">Travel Iternaries</p>
+            <div class="bg-black w-full h-[600px] flex flex-col justify-center">
+
+              <div class="w-full h-[500px] relative">
+                <div class="bg-youtube-mockup absolute inset-0 bg-center bg-cover bg-no-repeat ">
+                  <div class="absolute -bottom-[40px] right-[18px]">
+                    <p class="text-white font-sans text-[20px] font-[700] -tracking-[1px]"><i
+                        class="fa-brands fa-youtube"></i> YouTube</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="mt-[105px] flex">
+              <img class="w-[264px] h-[78px]" src="/src/img/company/blissful.png" alt="Blissful">
+              <img class="w-[264px] h-[78px]" src="/src/img/company/yatchclub.png" alt="Yatchclub">
+              <img class="w-[264px] h-[78px]" src="/src/img/company/traveling.png" alt="Traveling">
+              <img class="w-[264px] h-[78px]" src="/src/img/company/biking.png" alt="Biking">
+              <img class="w-[264px] h-[78px]" src="/src/img/company/travelworld.png" alt="TravelingWorld">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SEVENTH SECTION -->
+    <section>
+      <div class="w-full h-[830px]">
+        <div
+          class="w-full h-full relative flex flex-col justify-center items-start bg-africa bg-center bg-no-repeat py-[120px] px-[300px]">
+          <div class="bg-gradient-to-tr bg-contain from-[rgba(0,0,0,0.63)] to-[rgba(67,74,84,0.12)] absolute inset-0">
+          </div>
+          <div class="relative z-10">
+            <div class="font-[700] text-[50px] text-white">
+              <p>Unforgettable Travel</p>
+              <p class="-mt-[10px]">Experiences</p>
+            </div>
+            <div class="w-[594px] text-white font-[400]">
+              <p>Our customer's feedback is essential in building a great reputation and
+                maintaining excellent service. By listening to our customer's needs, we can
+                improve our offerings and provide an exceptional travel experience.</p>
+            </div>
+            <div class="flex gap-[40px] mt-[90px]">
+              <div class="w-[640px] p-[50px] text-white bg-main rounded-[15px]">
+                <p class="text-[25px] font-[400] mb-[28px]">My husband and I have been using this
+                  travel agency for years and they have
+                  never disappointed us.</p>
+                <div class="flex gap-[20px]">
+                  <img class="rounded-[50%]" width="45px" height="45px" src="/src/img/profile/person1.jpg"
+                    alt="Profike">
+                  <div>
+                    <p class="font-[700]">Jennifer and Mark</p>
+                    <p class="text-[14px] font-[400]">San Francisco</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w-[640px] p-[50px] text-white bg-main rounded-[15px]">
+                <p class="text-[25px] font-[400] mb-[28px]">This travel agency made my dream trip to
+                  Europe a reality. They worked with me
+                  every step of the way to plan the itinerary.</p>
+                <div class="flex gap-[20px]">
+                  <img class="rounded-[50%]" width="45px" height="45px" src="/src/img/profile/person2.jpg"
+                    alt="Profike">
+                  <div>
+                    <p class="font-[700]">Dylan and Emily</p>
+                    <p class="text-[14px] font-[400]">Miami</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- EIGHT SECTION -->
+    <section>
+      <div class="w-full h-[1100px]">
+        <div class="w-full h-full bg-white flex flex-col justify-center items-center">
+          <div class="content-center">
+            <div class="w-[780px] text-center mx-auto">
+              <p class="text-[30px] font-[500] font-reenie-beanie text-main">Clear Price</p>
+              <p class="text-[50px] font-[700] mb-[20px]">Affordable Travel Packages</p>
+              <p class="text-main-gray font-[400]">We believe that everyone deserves to experience their dream vacation
+                without breaking the bank.
+                That's why we offer a price section on our website that features a range of affordable travel</p>
+            </div>
+            <div class="flex gap-[10px] mt-[31px] ">
+              <!-- CARD 1 -->
+              <div
+                class="flex py-[70px] px-[105px] self-center flex-col justify-center gap-[20px] text-center bg-[#F2F2F2] rounded-[15px]">
+                <p class="text-[20px] font-[700]">Half Board</p>
+                <p class="text-[80px] font-[700]">$ 50 <span class="text-[20px]">/ Day</span></p>
+                <div class="text-main-gray flex flex-col gap-[12px]">
+                  <p>Transfer from Airport</p>
+                  <p>Minimum 3 Star Hotel</p>
+                  <p>Alcoholic beverages</p>
+                  <p>Incl. Museum Tickets</p>
+                  <p>Meals in Restroom</p>
+                </div>
+                <div class="mt-[30px]">
+                  <button class="bg-main text-white rounded-lg px-7 py-3 font-[700] text-[14px]">
+                    VIEW TRIPS
+                  </button>
+                </div>
+              </div>
+
+              <div
+                class="flex px-[105px] py-[80px] flex-col justify-center gap-[20px] text-center text-white bg-main rounded-[15px]">
+                <p class="text-[22px] font-[700]">All Inclusive</p>
+                <p class="text-[80px] font-[700]">$ 52 <span class="text-[20px]">/ Day</span></p>
+                <div class=" flex flex-col gap-[12px]">
+                  <p>Meals in Restaurants</p>
+                  <p>Alchoholic beverages</p>
+                  <p>Minimum 3 Star Hotel</p>
+                  <p>Transfer from Airport</p>
+                  <p>Incl. Museum Tickets</p>
+                </div>
+                <div class="mt-[30px]">
+                  <button class="bg-[#434A54] text-white rounded-lg px-7 py-3 font-[700] text-[14px]">
+                    VIEW TRIPS
+                  </button>
+                </div>
+              </div>
+
+              <div
+                class="flex relative py-[70px] px-[105px] self-center flex-col justify-center gap-[20px] text-center text-white bg-[#434A54] rounded-[15px]">
+                <div
+                  class="absolute px-[15px] py-[5px] bg-main top-[20px] right-[21px] text-[14px] rounded-[5px] font-[400]">
+                  POPULAR</div>
+                <p class="text-[20px] font-[700]">Excursions Included</p>
+                <p class="text-[80px] font-[700]">$ 68 <span class="text-[20px]">/ Day</span></p>
+                <div class="flex flex-col gap-[12px]">
+                  <p>Minimum 3 Star Hotel</p>
+                  <p>Meals in Restaurants</p>
+                  <p>Incl. Museum Tickets</p>
+                  <p>Made in Restaurants</p>
+                  <p>Alchoholic beverages</p>
+                </div>
+                <div class="mt-[30px]">
+                  <button class="bg-main text-white rounded-lg px-7 py-3 font-[700] text-[14px]">
+                    BUTTON
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="text-center mt-[13px]">
+              <p class="text-main-gray font-[400]">* All trips include medical insurance</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- NINTH SECTION -->
+    <section class="mt-[120px]">
+      <div class="w-full h-[700px]">
+        <div class="max-w-7xl flex mx-auto relative z-10">
+          <!-- PLAN TRIP TEXT -->
+          <div class="w-[642px] flex flex-col gap-[21px] relative z-10">
+            <div>
+              <p class="font-reenie-beanie text-[30px] text-[#5D5FEF]">
+                Wandering Souls
+              </p>
+              <div class="text-[50px] font-[700] w-[486px]">
+                <p>Discover Your Next Adventure</p>
+              </div>
+
+              <p class="text-main-gray leading-[24px] font-[400]">Whether you're planning a romantic honeymoon or a
+                family vacation, our
+                price section has got you covered. So, start browsing today and find the
+                perfect vacation package at a price that won't leave you feeling guilty.</p>
+
+              <div class="text-main-gray tracking-[1px] flex flex-col gap-[20px]">
+                <div class="flex flex-col gap-[20px]">
+                  <p>Organized Group Tour</p>
+                  <div class="w-full h-[5px] bg-[#F1F1F1] rounded-[2px]">
+                    <div class="w-[90%] h-[5px] bg-[#434A54] rounded-[2px]"></div>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-[20px]">
+                  <p>Single Customized Trip</p>
+                  <div class="w-full h-[5px] bg-[#F1F1F1] rounded-[2px]">
+                    <div class="w-[80%] h-[5px] bg-[#434A54] rounded-[2px]">
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-[40px]">
+                  <button class="bg-main text-white rounded-lg px-7 py-3 font-[700] text-[14px]">
+                    MORE INFO
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-[710px] h-[509px] relative">
+            <div
+              class="w-[700px] h-[500px] absolute bg-cover left-[120px] inset-0 rounded-l-[277px] bg-aside-next-adventure">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- TENTH SECTION -->
+    <section>
+      <div class="w-full h-[1200px]">
+        <div class="w-full h-full bg-white flex flex-col items-center gap-[60px]">
+          <div class="content-center">
+            <div class="flex flex-col gap-[20px]">
+              <div class="w-[780px] text-center mx-auto">
+                <p class="text-[30px] font-[500] font-reenie-beanie text-main">Roaming Tales</p>
+                <p class="text-[50px] font-[700]">Travel Blog</p>
+                <p class="font-[400] text-main-gray">We share our experiences, tips and travel stories to inspire and
+                  guide our readers in their own
+                  wanderlust adventures. From hidden gems to popular destinations, we showcase the beauty and
+                  diversity of the world, and promote responsible and sustainable travel.</p>
+              </div>
+            </div>
+            <div class="flex gap-[50px] mt-[60px]">
+              <div class="w-[640px] flex flex-col gap-[20px]">
+                <img class="rounded-[15px]" src="/src/img/show-card/houses.jpg" alt="">
+                <div class="bg-[#434A54] py-[5px] px-[15px] w-[120px] text-center rounded-[5px]">
+                  <p class="text-[14px] text-white font-[700]">April 7, 2023</p>
+                </div>
+                <p class="text-[25px] font-[700]">Plan the Perfect Vacation</p>
+                <p>Planning a vacation can be overwhelming, but this post offers a step-by-step
+                  guide to help readers create a comprehensive travel itinerary. From choosing a
+                  destination to booking accommodations and activities, readers will learn how
+                  to plan a stress-free and enjoyable trip.</p>
+                <div>
+                  <button class="bg-main text-white rounded-lg px-7 py-3 font-[700] text-[14px]">
+                    Details
+                  </button>
+                </div>
+              </div>
+
+              <div class="flex flex-col gap-[35px] w-[580px]">
+                <div class="flex gap-[30px]">
+                  <div>
+                    <img class="w-[400px] h-[150px] rounded-[15px]" src="/src/img/bg/adventure-hero-bg.jpg" alt="View">
+                  </div>
+                  <div class="flex flex-col gap-[20px]">
+                    <div class="bg-main py-[5px] px-[15px] w-[120px] text-center rounded-[5px]">
+                      <p class="text-[14px] text-white font-[700]">April 7, 2023</p>
+                    </div>
+                    <p class="text-[20px] font-[700]">Discover the Hidden Gems</p>
+                    <p class="text-main-gray">Benefits of traveling alone, from freedom to discover
+                      new places with new friends.</p>
+                  </div>
+                </div>
+
+                <div class="flex gap-[30px]">
+                  <div>
+                    <img class="w-[400px] h-[150px] rounded-[15px]" src="/src/img/show-card/road.jpg" alt="View">
+                  </div>
+                  <div class="flex flex-col gap-[20px]">
+                    <div class="bg-main py-[5px] px-[15px] w-[120px] text-center rounded-[5px]">
+                      <p class="text-[14px] text-white font-[700]">April 7, 2023</p>
+                    </div>
+                    <p class="text-[20px] font-[700]">Must-See Landmarks</p>
+                    <p class="text-main-gray">Iconic landmarks that make Europe one of the
+                      world's most popular travel destinations.</p>
+                  </div>
+                </div>
+
+                <div class="flex gap-[30px]">
+                  <div>
+                    <img class="w-[400px] h-[150px] rounded-[15px]" src="/src/img/show-card/mountain-view.jpg"
+                      alt="View">
+                  </div>
+                  <div class="flex flex-col gap-[20px]">
+                    <div class="bg-main py-[5px] px-[15px] w-[120px] text-center rounded-[5px]">
+                      <p class="text-[14px] text-white font-[700]">April 7, 2023</p>
+                    </div>
+                    <p class="text-[20px] font-[700]">Traveling on a Budget</p>
+                    <p class="text-main-gray">Practical advice for travelers who want to see the
+                      world without breaking the bank.</p>
+                  </div>
+                </div>
+
+                <div class="flex gap-[30px]">
+                  <div>
+                    <img class="w-[400px] h-[150px] rounded-[15px]" src="/src/img/show-card/city-view.jpg" alt="View">
+                  </div>
+                  <div class="flex flex-col gap-[20px]">
+                    <div class="bg-main py-[5px] px-[15px] w-[120px] text-center rounded-[5px]">
+                      <p class="text-[14px] text-white font-[700]">April 7, 2023</p>
+                    </div>
+                    <p class="text-[20px] font-[700]">Explore the Wonders</p>
+                    <p class="text-main-gray">Must-see destinations and experiences, including
+                      wildlife and cultural experiences.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="w-full h-[480px] relative text-white">
+      <div class="w-full h-full absolute inset-0 bg-footer bg-center bg-no-repeat">
+        <div class="w-full h-full relative bg-more-dark"></div>
+      </div>
+      <div class="relative h-full w-full">
+        <div class="w-full h-full flex justify-center items-center gap-[200px]">
+          <div class="w-[555px]">
+            <p class="text-[50px] font-[700]">Travel beyond your
+              imagination, with our
+              Travel Agency!</p>
+          </div>
+
+          <div class="flex flex-col gap-[21px] relative right-[95px]">
+            <p class="text-[20px] font-[700]">Address</p>
+            <p class="font-[400]">1080 Brickell Ave</p>
+            <p class="font-[400]">Miami - Florida</p>
+            <p class="font-[400]">U.S. of America</p>
+          </div>
+
+          <div class="flex flex-col gap-[20px] relative -left-[100px]">
+            <p class="text-[20px] font-[700]">Contact</p>
+            <div>
+              <button class="bg-main text-white rounded-lg px-7 py-3 font-[700] text-[14px]">
+                info@travel.com
+              </button>
+            </div>
+            <p class="text-[25px] font-[700]">+ 01 483 593 284</p>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+  </main>
+</body>
+
+</html>
